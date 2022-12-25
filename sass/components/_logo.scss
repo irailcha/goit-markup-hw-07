@@ -1,0 +1,35 @@
+.link-logo,
+.logo-header {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    color: $color-logo-second;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $color-logo-second;
+        
+    }
+
+}
+
+.logo-header {
+    color: $color-brand;
+    font-family: 'Raleway', sans-serif;
+
+    
+&:hover,
+&:focus {
+    color: $color-brand;
+}
+}
+
+

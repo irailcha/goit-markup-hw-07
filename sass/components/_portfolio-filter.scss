@@ -1,0 +1,42 @@
+.filter__button {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-color-third;
+    border-radius: 4px;
+    border-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 22px;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: $transition-timing-function;
+
+
+    &:hover,
+    &:focus {
+    color: $background-color-first;
+    background-color: $color-brand;
+    box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.12), 0px 1px 2px 0px hsla(0, 0%, 0%, 0.08), 0px 3px 1px 0px hsla(0, 0%, 0%, 0.1);
+
+}
+    
+}
+
+
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+
+}
+
+.filter__item {
+    min-width: 73px;
+}
