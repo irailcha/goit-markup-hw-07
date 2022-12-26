@@ -1,9 +1,8 @@
-.link-logo,
-.logo-header {
+.logo{
     display: flex;
     vertical-align: middle;
     align-items: center;
-    color: $color-logo-second;
+    color: $color-brand;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -15,21 +14,28 @@
 
     &:hover,
     &:focus {
-        color: $color-logo-second;
+        color: $color-brand;
         
     }
 
 }
 
-.logo-header {
-    color: $color-brand;
+.logo__text {
+    color: $color-logo-second;
     font-family: 'Raleway', sans-serif;
-
-    
 &:hover,
 &:focus {
-    color: $color-brand;
+    color: $color-logo-second;
 }
 }
 
+.logo__text--inverse{
+    color: $background-color-first;
+
+    &:hover,
+    &:focus{
+        color: $background-color-first;
+    }
+
+}
 
