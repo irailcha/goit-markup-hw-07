@@ -8,8 +8,7 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     transition-property: color;
-    transition-duration: $transition-duration;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 
     &:hover,
     &:focus {

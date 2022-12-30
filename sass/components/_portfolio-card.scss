@@ -1,9 +1,6 @@
 .project-list {
-    display: flex;
-
+    @extend %display-padding-margin;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
     margin-left: calc(-1 * $card-set-gap);
     margin-top: calc(-1 * $card-set-gap);
 
@@ -11,11 +8,20 @@
 
 
     &__card {
+        position: relative;
+        text-decoration: none;
         flex-basis: calc(100% / 3 - $card-set-gap);
         margin-left: $card-set-gap;
         margin-top: $card-set-gap;
+    
     }
+&__card:hover,
+&__card:focus {
+    box-shadow: 1px 4px 6px 0px hsla(0, 0%, 0%, 0.16), 0px 4px 4px 0px hsla(0, 0%, 0%, 0.06), 0px 1px 1px 0px hsla(0, 0%, 0%, 0.12);
 }
+}
+
+
 
 .card {
     border-left: 1px solid #EEEEEE;
@@ -26,60 +32,39 @@
 
 
 
-    &__title {
+&__title {
         color: $color-primary;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        margin-bottom: 4px;
+        margin-bottom: 4px;}
 
-        &:hover,
-        &:focus {
+&__title:hover,
+&__title:focus {
             color: $color-primary;
         }
+    
+    
 
-    }
-
-    &__text {
+&__text {
         color: $color-secondary;
         font-size: 16px;
         line-height: 1.88;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.03em;}
 
-        &:hover,
-        &:focus {
+&__text:hover,
+&__text:focus {
             color: $color-secondary;
         }
-
-
     }
-}
 
-
-
-
-
-.project-list__link {
-    text-decoration: none;
-
-    &__card {
-        position: relative;
-
-        &:hover,
-        &:focus {
-            box-shadow: 1px 4px 6px 0px hsla(0, 0%, 0%, 0.16), 0px 4px 4px 0px hsla(0, 0%, 0%, 0.06), 0px 1px 1px 0px hsla(0, 0%, 0%, 0.12);
-        }
-
-
-    }
-}
-
+/*----------*/
 .thumb {
     position: relative;
     overflow: hidden;
 
-    &:hover .thumb__text {
+    &:hover &__text {
         opacity: 1;
     }
 
@@ -93,22 +78,25 @@
         height: 100%;
         background-color: rgba(33, 150, 243, 0);
 
-        transition: transform 250ms $transition-timing-function, opacity 250ms $transition-timing-function;
-
+        transition-property: transform, opacity; 
+        @extend %transition;
         transform: translateY(100%);
 
 
 
     }
+.project-list:hover &::before {
+             transform: translateY(0);
+}
+
 
     &:hover::before {
         background-color: rgba(33, 150, 243, 0.9);
 
     }
 
-    .project-list:hover &::before {
-        transform: translateY(0);
-    }
+
+   
 
 
     &__text {
@@ -126,4 +114,6 @@
         transform: translate(-50%, -50%);
         opacity: 0;
     }
+
+
 }

@@ -16,8 +16,7 @@
     padding-bottom: 32px;
 
     transition-property: color;
-    transition-duration: $transition-duration;
-    transition-timing-function: var(--transition-timing-function);
+    @extend %transition;
 
     &:hover,
     &:focus {

@@ -6,9 +6,7 @@
 }
 
 .team {
-    padding: 0;
-    margin: 0;
-    display: flex;
+    @extend %display-padding-margin;
     gap: $card-set-gap;
 
 

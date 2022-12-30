@@ -38,18 +38,9 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-}
-&__list:nth-child(1):before{
-    background-image: url(/images/antenna.svg);
-}
+    @include genereteIcons ($icons);}
 
-&__list:nth-child(2):before{
-    background-image: url(/images/clock.svg);
-}
-&__list:nth-child(3):before{
-    background-image: url(/images/diagram.svg);
-}
-&__list:nth-child(4):before{
-    background-image: url(/images/astronaut.svg);
- }
+
+.visually-hidden {
+    @include visually-hidden()
 }

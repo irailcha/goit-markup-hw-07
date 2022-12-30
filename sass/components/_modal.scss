@@ -8,7 +8,8 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    transition: opacity $transition-duration $transition-timing-function;
+    transition-property: opacity;
+    @extend %transition;
     
 
 
@@ -34,7 +35,8 @@
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     
-    transition: opacity $transition-duration $transition-timing-function;
+    transition-property: opacity;
+        @extend %transition;
 
 .backdrop--is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
@@ -72,7 +74,7 @@
     height: 30px;
     display: block;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include bordered (1px, rgba(0, 0, 0, 0.1));
     background-color: transparent;
     padding: 12px;
     align-items: center;
@@ -115,14 +117,13 @@
 
     &__field {
         width: 100%;
-        border: 1px solid rgba(33, 33, 33, 0.2);
+        @include bordered (1px,rgba(33, 33, 33, 0.2));
         border-radius: 4px;
         height: 40px;
         display: inline-block;
 
         transition-property: border, fill;
-        transition-duration: $transition-duration;
-        transition-timing-function: $transition-timing-function;
+        @extend %transition;
         font: inherit;
         padding-left: 42px;
         outline: none;
@@ -186,8 +187,7 @@
         content: '';
         width: 16px;
         height: 15px;
-
-        border: 2px solid $color-primary;
+        @include bordered (2px,$color-primary);
         border-radius: 4px;
         display: inline-block;
         margin-right: 7px;
@@ -207,8 +207,7 @@
         vertical-align: middle;
 
         transition-property: background-origin;
-        transition-duration: 250ms;
-        transition-timing-function: $transition-timing-function;
+        @extend %transition;
     }
 
 
