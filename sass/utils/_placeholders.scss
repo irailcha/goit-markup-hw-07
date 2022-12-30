@@ -1,0 +1,21 @@
+/*кнопкa*/
+%button {
+    font-family: 'Roboto', sans-serif;
+
+    border-radius: 4px;
+    border-style: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+}
+
+%flex-align-items {
+        display: flex;
+        align-items: center;
+}
+

@@ -3,10 +3,10 @@
     margin-bottom: 30px;
     justify-content: center;
     gap: 10px;
-}
 
 
-.network__link{
+
+&__link{
     width: 44px;
     height: 44px;
     display: block;
@@ -16,7 +16,7 @@
     color: $color-links;
 
     transition-property: background-color, color;
-    transition-duration: 250ms;
+    transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
 
     &:hover,
@@ -27,21 +27,19 @@
     }
 }
 
-.network__icon{
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+&__icon{
+    @include icon (20px, 20px, currentColor)
 }
 
 /*--------------*/
 
-.network--inverse{
+&--inverse{
     display: flex;
     gap: 10px;
 }
 
 
-.network__link--inverse{
+&__link--inverse{
     width: 44px;
     height: 44px;
     display: block;
@@ -52,7 +50,7 @@
     background-color: rgba(255, 255, 255, 0.1);
 
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
 
     &:hover, &:focus{
@@ -61,9 +59,7 @@
 
 }
 
-.network__icon--inverse{
-    width: 20px;
-    height: 20px;
-    fill: $background-color-first;
+&__icon--inverse{
+    @include icon (20px, 20px, $background-color-first);
 
-}
+}}

@@ -1,18 +1,25 @@
-.contact__link {
+/*Header*/
+.contact {
     display: flex;
-    color: $color-secondary;
+    margin-left: auto;
+    gap: 50px;
+    
+
+&__link {
+    @extend %flex-align-items;
+    color:$color-secondary;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
-    align-items: center;
+    
 
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
-
+    
     &:hover,
     &:focus {
     color: $color-brand;
@@ -21,61 +28,16 @@
     
 }
 
-.contact__envelope{
-    width: 16px;
-    height: 12px;
+&__envelope{
+    @include icon (16px, 12px, currentColor);
     margin-right: 10px;
-    fill: currentColor;
-    }
-
-.contact__smartphone{
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-        fill: currentColor;
-    }
-
-    .contact {
-        display: flex;
-        margin-left: auto;
-        gap: 50px;
     
     }
-    
 
-    /*--------*/
- 
-    .contact-footer__link {
-        color: $color-secondary;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: $transition-timing-function;
+&__smartphone{
+    @include icon (10px, 16px, currentColor);
+    margin-right: 10px;
         
+}
 
-        &:hover, &:focus{
-            color: $color-brand;
-        }
-    }
-    
-
-    .contact-footer__list{
-        padding-bottom: 9px;
-    }
-    .contact-footer__list:last-child{
-        padding-bottom: 0;
-    }
-    .contact-footer__list:first-child{
-        color: $background-color-first;
-    }
-    
-    .contact-footer{
-        display: block;
-        width: 231px;
-        margin-right: 70px;
-        margin-top: 20px;
-    }
-
+}

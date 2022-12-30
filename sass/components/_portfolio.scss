@@ -1,136 +1,19 @@
-.portfolio .section {
+.section-portfolio {
     padding-top: 94px;
 }
 
-.project-list {
+.filter {
     display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
 
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    margin-left: calc(-1 * $card-set-gap);
-    margin-top: calc(-1 * $card-set-gap);
 
-    
+
+&__item {
+    min-width: 73px;
 }
 
-.project-list__card {
-    flex-basis: calc(100% / 3 - $card-set-gap);
-    margin-left: $card-set-gap;
-    margin-top: $card-set-gap;
-}
-
-.card {
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    padding: 20px 24px;
-}
-.thumb__img{
-    width: 100%;
-}
-.card__title {
-    color: $color-primary;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
-
-    &:hover,
-    &:focus {
-    color: $color-primary;
-}
-
-}
-
-.card__text {
-    color: $color-secondary;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-
-    &:hover,
-    &:focus {
-    color: $color-secondary;
-}
-
-
-}
-
-
-
-
-
-.project-list__link {
-    text-decoration: none;
-
-}
-
-
-
-
-
-.project-list__card{
-    position: relative;
-
-    &:hover,
-    &:focus{
-        box-shadow: 1px 4px 6px 0px hsla(0, 0%, 0%, 0.16), 0px 4px 4px 0px hsla(0, 0%, 0%, 0.06), 0px 1px 1px 0px hsla(0, 0%, 0%, 0.12);
-    }
-
-    &:hover .thumb::before {
-        transform: translateY(0);
-    }
-}
-
-.thumb{
-    position: relative;
-    overflow: hidden;
-
-    &:hover .thumb__text{
-        opacity: 1;
-    }
-}
-
-.thumb::before{
-    display: block;
-    position: absolute;
-
-    content:'';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0);
-
-    transition: transform 250ms $transition-timing-function, opacity 250ms $transition-timing-function;
-
-    transform: translateY(100%);
-
-
-    
-}
-
-.thumb:hover::before{
-    background-color: rgba(33, 150, 243, 0.9);
-    
-}
-
-
-
-.thumb__text{
-    display: inline-block;
-    position: absolute;
-    color:rgba(255, 255, 255, 1);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
-    width: 322px;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
 }
 
 

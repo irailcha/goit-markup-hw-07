@@ -1189,7 +1189,7 @@ transition-timing-function: var(--transition-timing-function);
 }
 
 
-.textarea .input-field{
+.textarea .input__field{
     height: 120px;
     padding-left: 16px;
     padding-top: 12px;

@@ -1,9 +1,11 @@
 .nav {
     display: flex;
-    
-}
+    margin-left: 93px;
+    align-items: center;
+    gap: 50px;
 
-.nav__link {
+
+&__link {
     position: relative;
     color: $color-primary;
     font-weight: 500;
@@ -14,7 +16,7 @@
     padding-bottom: 32px;
 
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: $transition-duration;
     transition-timing-function: var(--transition-timing-function);
 
     &:hover,
@@ -26,18 +28,8 @@
 
 
 
-.nav{
-    display: flex;
 
-    margin-left: 93px;
-    align-items: center;
-    gap: 50px;
-   
-}
-
-
-
-.nav__link.accent::after{
+&__link--accent::after{
     position: absolute;
 
     content: '';
@@ -49,6 +41,6 @@
     bottom: 0;
     opacity: 1;
 }
-
+}
 
 

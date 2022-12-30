@@ -1,11 +1,3 @@
-/*секція section-team Наша команда*/
-.team {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 30px;
-}
-
 .section-team {
     background-color: $background-color-third;
     padding-bottom: 94px;
@@ -13,7 +5,14 @@
 
 }
 
-.team__card{
+.team {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: $card-set-gap;
+
+
+&__card{
     background-color: $background-color-first;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -22,14 +21,13 @@
 }
 
 
-
-.team__img {
+&__img {
     margin-top: 0;
     margin-bottom: 30px;
     width: auto;
 }
 
-.team__name {
+&__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -38,7 +36,7 @@
     margin-bottom: 10px;
 }
 
-.team__text {
+&__text {
     color: $color-secondary;
     font-size: 16px;
     line-height: 1.19;
@@ -46,9 +44,9 @@
     margin-top: 0;
     margin-bottom: 30px;
 }
+}
 
 
 
-/*-------------*/
 
 

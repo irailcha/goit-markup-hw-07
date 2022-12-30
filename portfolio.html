@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="header">
+      <div class="container header__container" >
         
           <a class="logo" href="./index.html"
             >Web<span class="logo__text">Studio</span></a
@@ -33,7 +33,7 @@
               <a class="nav__link " href="./index.html">Студія</a>
             </li>
             <li class="nav__list">
-              <a class="nav__link accent" href="./portfolio.html">Портфоліо</a>
+              <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__list"><a class="nav__link" href="#">Контакт</a></li>
           </ul>
@@ -60,24 +60,24 @@
 
 
     <main class="portfolio">
-      <section class="section">
+      <section class="section section-portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filter">
             <li class="filter__item">
-              <button type="button" class="filter__button">Усі</button>
+              <button type="button" class="button-filter">Усі</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Веб-сайти</button>
+              <button type="button" class="button-filter">Веб-сайти</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Додатки</button>
+              <button type="button" class="button-filter">Додатки</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Дизайн</button>
+              <button type="button" class=" button-filter">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button">Маркетинг</button>
+              <button type="button" class="button-filter">Маркетинг</button>
             </li>
           </ul>
 
@@ -260,7 +260,7 @@
           <ul class="contact-footer">
             <li class="contact-footer__list">
               <a
-                class="contact-footer__link"
+                class="contact-footer__link address"
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 target=" _blank"
                 rel="noopener noreferrer
@@ -315,14 +315,14 @@
 
           <form class="footer-form">
             <input
-              class="mail-subscrb"
+              class="footer-form__input"
               type="email"
               name="mail-subscrb"
               id="mail-subscrb"
               placeholder="E-mail"
             />
-            <button type="submit" class="subscribe-button">
-              Підписатися<svg class="icon-send">
+            <button type="submit" class="button-subscribe">
+              Підписатися<svg class="button-subscribe__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
