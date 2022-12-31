@@ -17,6 +17,6 @@
    ],
    "liveSassCompile.settings.generateMap": true,
    "liveSassCompile.settings.autoprefix": [
-       "defaults"
+       "defaults" 
    ]
 }
