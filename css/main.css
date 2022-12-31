@@ -582,18 +582,6 @@ img {
 }
 
 /*кнопкa*/
-.button-modal-submit, .button-filter, .button-subscribe, .button-hero {
-  font-family: "Roboto", sans-serif;
-  border-radius: 4px;
-  border-style: none;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  display: block;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .label, .nav, .contact__link, .logo {
   display: flex;
   align-items: center;
@@ -613,9 +601,19 @@ img {
   padding: 0;
 }
 
-.checkbox__input:checked + .checkbox__policy::before, .input__field, .modal, .backdrop, .thumb::before, .contact-footer__link, .clients__link, .nav__link, .network__link--inverse, .network__link, .contact__link, .logo {
+.checkbox__input:checked + .checkbox__policy::before, .input__field, .modal, .backdrop, .thumb::before, .contact-footer__link, .clients__link, .nav__link, .network__link--inverse, .network__link, .contact__link, .logo, .button-modal-submit, .button-filter, .button-subscribe, .button-hero {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal-submit, .button-filter, .button-subscribe, .button-hero {
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
 }
 
 .container {
@@ -904,12 +902,25 @@ img {
   margin-left: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features {
   display: flex;
   padding-bottom: 0;
   gap: 30px;
-  /*<ul class="features">
-  <li class="feature-list">*/
 }
 .features__title {
   margin-top: 0;
@@ -939,32 +950,17 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.features__list:nth-child(1):before {
-  background-image: url(/images/antenna.svg);
+.features__list::before .icon-antenna {
+  background-image: url(/images/antenna);
 }
-.features__list:nth-child(2):before {
-  background-image: url(/images/clock.svg);
+.features__list::before .icon-clock {
+  background-image: url(/images/clock);
 }
-.features__list:nth-child(3):before {
-  background-image: url(/images/diagram.svg);
+.features__list::before .icon-diagram {
+  background-image: url(/images/diagram);
 }
-.features__list:nth-child(4):before {
-  background-image: url(/images/astronaut.svg);
-}
-
-.visually-hidden {
-  position: absolute;
-  color: rgba(0, 0, 0, 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.features__list::before .icon-astronaut {
+  background-image: url(/images/astronaut);
 }
 
 .development {
