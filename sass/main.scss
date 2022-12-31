@@ -2,11 +2,13 @@
 @import './utils/fonts';
 @import './base/reset';
 
+
 @import './utils/vars';
 @import './base/global';
 @import './utils/placeholders';
 @import './utils/mixin';
 @import './utils/indents';
+
 
 @import './layout/container';
 @import './components/logo';
@@ -14,6 +16,7 @@
 @import './components/title';
 @import './components/contacts';
 @import './components/social-networks';
+
 
 @import './components/page-header';
 @import './components/section-hero';
