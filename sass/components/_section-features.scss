@@ -1,3 +1,6 @@
+.visually-hidden {
+    @include visually-hidden()
+}
 
 .features {
     display: flex;
@@ -26,8 +29,6 @@
     letter-spacing: 0.03em;
 }
 
-/*<ul class="features">
-<li class="feature-list">*/
 &__list::before{
     display: block;
 
@@ -39,8 +40,5 @@
     background-repeat: no-repeat;
     background-position: center;
     @include genereteIcons ($icons);}
-
-
-.visually-hidden {
-    @include visually-hidden()
 }
+
