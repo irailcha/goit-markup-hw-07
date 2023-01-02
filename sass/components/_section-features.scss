@@ -1,12 +1,19 @@
 .visually-hidden {
     @include visually-hidden()
 }
-
+.section-features{
+    padding-bottom: 0;
+}
 .features {
     display: flex;
-    padding-bottom: 0;
-    gap: $card-set-gap;
+    
+    margin-left: calc(-1 * $card-set-gap);
 
+
+&__list {
+    flex-basis: calc(100% / 4 - $card-set-gap);
+    margin-left: $card-set-gap;
+}
 
 
 &__title {
@@ -29,6 +36,7 @@
     letter-spacing: 0.03em;
 }
 
+
 &__list::before{
     display: block;
 
@@ -39,6 +47,18 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    @include genereteIcons ($icons);}
+}
+&__list:nth-child(1):before{
+    background-image: url(../images/antenna.svg);
 }
 
+&__list:nth-child(2):before{
+    background-image: url(../images/clock.svg);
+}
+&__list:nth-child(3):before{
+    background-image: url(../images/diagram.svg);
+}
+&__list:nth-child(4):before{
+    background-image: url(../images/astronaut.svg);
+ }
+}
