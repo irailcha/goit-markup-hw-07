@@ -48,6 +48,6 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include genereteIcons($iconName);
+    @include genereteIcons($icons);
 }
 }

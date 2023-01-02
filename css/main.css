@@ -998,16 +998,16 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.features__list:nth-child(1):before {
+.features__list::before .icon-antenna {
   background-image: url(../images/antenna.svg);
 }
-.features__list:nth-child(2):before {
+.features__list::before .icon-clock {
   background-image: url(../images/clock.svg);
 }
-.features__list:nth-child(3):before {
+.features__list::before .icon-diagram {
   background-image: url(../images/diagram.svg);
 }
-.features__list:nth-child(4):before {
+.features__list::before .icon-astronaut {
   background-image: url(../images/astronaut.svg);
 }
 
@@ -1529,7 +1529,7 @@ img {
 .checkbox__input:checked + .checkbox__policy::before {
   background-color: #2196F3;
   border-color: #2196F3;
-  background-image: url(/images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
   fill: #FFFFFF;
   background-size: contain;
   background-origin: content-box;
