@@ -1,0 +1,13 @@
+$icons: 'antenna',
+'clock',
+'diagram',
+'astronaut';
+
+@mixin genereteIcons($iconList){
+@each $iconName in $iconList{
+.icon-#{$iconName} {
+        background-image: url(../images/#{$iconName}.svg);
+
+    }}}
+
+
