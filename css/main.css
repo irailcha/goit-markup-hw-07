@@ -998,17 +998,17 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.features__list::before .icon-antenna {
-  background-image: url(/images/antenna.svg);
+.features__list:nth-child(1):before {
+  background-image: url(../images/antenna.svg);
 }
-.features__list::before .icon-clock {
-  background-image: url(/images/clock.svg);
+.features__list:nth-child(2):before {
+  background-image: url(../images/clock.svg);
 }
-.features__list::before .icon-diagram {
-  background-image: url(/images/diagram.svg);
+.features__list:nth-child(3):before {
+  background-image: url(../images/diagram.svg);
 }
-.features__list::before .icon-astronaut {
-  background-image: url(/images/astronaut.svg);
+.features__list:nth-child(4):before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .development {
