@@ -999,16 +999,16 @@ img {
   background-position: center;
 }
 .features__list::before .icon-antenna {
-  background-image: url(../images/antenna.svg);
+  background-image: url(/images/antenna.svg);
 }
 .features__list::before .icon-clock {
-  background-image: url(../images/clock.svg);
+  background-image: url(/images/clock.svg);
 }
 .features__list::before .icon-diagram {
-  background-image: url(../images/diagram.svg);
+  background-image: url(/images/diagram.svg);
 }
 .features__list::before .icon-astronaut {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(/images/astronaut.svg);
 }
 
 .development {
