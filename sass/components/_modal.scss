@@ -196,6 +196,8 @@
 
     }
 
+
+
     &__input:checked+&__policy::before {
         background-color: $color-brand;
         border-color: $color-brand;
@@ -209,7 +211,6 @@
         transition-property: background-origin;
         @extend %transition;
     }
-
 
 
     &__policy {
