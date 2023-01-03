@@ -1,6 +1,7 @@
 .logo{
-    @extend %flex-align-items;
-    vertical-align:middle;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
     color: $color-brand;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -9,6 +10,7 @@
     letter-spacing: 0.03em;
     transition-property: color;
     @extend %transition;
+    max-width: 146px;
 
     &:hover,
     &:focus {
