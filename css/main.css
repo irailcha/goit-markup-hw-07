@@ -674,10 +674,6 @@ img {
   gap: 50px;
 }
 
-.nav__list {
-  position: relative;
-}
-
 .nav__link {
   position: relative;
   color: #212121;
@@ -1566,6 +1562,9 @@ img {
   vertical-align: middle;
   -webkit-transition-property: background-origin;
   transition-property: background-origin;
+}
+.checkbox__input:hover + .checkbox__policy::before, .checkbox__input:focus + .checkbox__policy::before {
+  border-color: #2196F3;
 }
 .checkbox__policy {
   display: inline-block;
