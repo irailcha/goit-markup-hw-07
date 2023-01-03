@@ -4,8 +4,12 @@
     align-items: center;
     gap: 50px;}
 
+    .nav__list{
+        position: relative;
+    }
 
-    .nav__link{
+
+.nav__link{
     position: relative;
     color: $color-primary;
     font-weight: 500;
